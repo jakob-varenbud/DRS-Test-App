@@ -1,0 +1,15 @@
+{
+  "React Pure Component": {
+    "prefix": "reco",
+    "body": [
+      "",
+      "const $TM_FILENAME_BASE =  () => {",
+      "",
+      "  return <div></div>",
+      "};",
+      "",
+      "export default $TM_FILENAME_BASE;"
+    ],
+    "isFileTemplate": true
+  }
+}
