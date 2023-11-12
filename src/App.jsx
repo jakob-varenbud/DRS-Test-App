@@ -1,7 +1,7 @@
 import "./index.css";
-import Navbar from "./navbar";
-import HeaderSection from "./headersection";
-import MultiStepForm from "./multistep";
+import Navbar from "./components/navbar";
+import HeaderSection from "./components/headersection";
+import MultiStepForm from "./components/multistep";
 
 function App() {
   return (
@@ -13,7 +13,4 @@ function App() {
   );
 }
 
-//This is a Test
-//This is a test 2
-//This is a test 3
 export default App;
