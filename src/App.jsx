@@ -1,7 +1,8 @@
 //---------IMPORTS------------\
 
-import { createBrowserRouter, RouterProvider } from "react-router";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home";
+import Index from "./pages/Index";
 
 //---------MAIN------------\
 
@@ -9,19 +10,20 @@ function App() {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <div>HOEMTET</div>,
+      element: <Index />,
+      children: [
+        {
+          path: "home",
+          element: <Home />,
+        },
+        {
+          path: "login",
+          element: <div>LOGIN TEST</div>,
+        },
+      ],
     },
   ]);
 
-  return (
-    <div
-      style={{
-        width: "100%",
-        height: "100%",
-      }}
-    >
-      <RouterProvider router={router} />
-    </div>
-  );
+  return <RouterProvider router={router} />;
 }
 export default App;

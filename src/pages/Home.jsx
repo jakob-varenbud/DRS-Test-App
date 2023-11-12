@@ -2,7 +2,7 @@ const Home = () => {
   return (
     <div
       style={{
-        backgroundColor: "red",
+        backgroundColor: "blue",
         width: "100%",
         height: "100%",
       }}
