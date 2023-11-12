@@ -1,16 +1,22 @@
-import "./index.css";
-import Navbar from "./components/navbar";
-import HeaderSection from "./components/headersection";
-import MultiStepForm from "./components/multistep";
+//---------IMPORTS------------\
+
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+//---------MAIN------------\
 
 function App() {
-  return (
-    <div>
-      <Navbar />
-      <HeaderSection />
-      <MultiStepForm />
-    </div>
-  );
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: (
+        <>
+          <h1>Home</h1>
+          <p>This is the home page</p>
+        </>
+      ),
+    },
+  ]);
+
+  return <></>;
 }
-//Danke
 export default App;
