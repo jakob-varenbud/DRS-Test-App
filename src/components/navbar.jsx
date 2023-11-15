@@ -1,4 +1,4 @@
-import DRS_Smart_Repair_Logo from "./assets/Smart Repair Logo.png";
+import DRS_Smart_Repair_Logo from "../assets/Smart Repair Logo.png";
 import { useState } from "react";
 
 function Navbar() {

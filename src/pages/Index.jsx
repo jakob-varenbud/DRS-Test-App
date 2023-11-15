@@ -1,14 +1,10 @@
 import { Outlet } from "react-router-dom";
+import Navbar from "../components/navbar";
 
 const Index = () => {
   return (
-    <div
-      style={{
-        width: "100%",
-        height: "100%",
-      }}
-    >
-      <div>HEADER</div>
+    <div>
+      <Navbar />
       <Outlet />
     </div>
   );

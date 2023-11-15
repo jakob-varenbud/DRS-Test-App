@@ -13,7 +13,7 @@ function App() {
       element: <Index />,
       children: [
         {
-          path: "home",
+          path: "/",
           element: <Home />,
         },
         {
