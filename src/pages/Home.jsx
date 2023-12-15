@@ -1,5 +1,5 @@
 import HeaderSection from "../components/headersection";
-import MultiStepForm from "../components/multistep";
+import MultiStepForm from "../components/multistepform/multistep";
 
 const Home = () => {
   return (
