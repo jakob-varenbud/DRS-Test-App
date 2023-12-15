@@ -1,6 +1,7 @@
 import { useState } from "react";
 import StepOne from "./multistepUtils/StepOne";
 import StepTwo from "./multistepUtils/StepTwo";
+import StepThree from "./multistepUtils/StepThree";
 
 function MultiStepForm() {
   const [step, setStep] = useState(1);
@@ -12,6 +13,7 @@ function MultiStepForm() {
     phone: "",
     message: "",
   });
+  const [uploadedFiles, setUploadedFiles] = useState([]);
 
   const checkboxData = [
     { id: 1, label: "Delle" },
@@ -39,6 +41,11 @@ function MultiStepForm() {
     }));
   };
 
+  const handleFileUpload = (e) => {
+    const files = e.target.files;
+    setUploadedFiles(Array.from(files));
+  };
+
   return (
     <div>
       {step === 1 && (
@@ -56,7 +63,13 @@ function MultiStepForm() {
           setStep={setStep}
         />
       )}
-      {/* Other steps/components go here */}
+      {step === 3 && (
+        <StepThree
+          uploadedFiles={uploadedFiles}
+          handleFileUpload={handleFileUpload}
+          setStep={setStep}
+        />
+      )}
     </div>
   );
 }

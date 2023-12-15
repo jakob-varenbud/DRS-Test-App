@@ -38,7 +38,7 @@ const StepTwo = ({ formData, handleInputChange, setStep }) => {
         placeholder="Deine Nachricht"
       />
       <button onClick={() => setStep(step - 1)}>Back</button>
-      <button onClick={() => setStep(step + 1)}>Next</button>
+      <button onClick={() => setStep(3)}>Next</button>
     </div>
   );
 };
